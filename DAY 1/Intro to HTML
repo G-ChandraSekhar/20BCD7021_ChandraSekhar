@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to HTML</title>
+    <style>
+        a:hover{
+            color:red;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSI Welcomes You</h1>
+    <a href="https://twitter.com/10chandrasekhar" title="Chandra Sekhar's twitter account" target="_blank">Twitter</a>
+    <a href="https://github.com/G-ChandraSekhar" title="Chandra Sekhar's Github account" target="_blank">Github</a>
+    <br>
+    <img src="Chandra Sekhar.jpg" alt="This is Chandra Sekhar's Image">
+    <br>
+    <p style="color:coral">My name is Chandra Sekhar, pursuing Bachelor's degree in VIT in CSE-DA. I recently joined CSI as a Monitor for Special Mention students.</p>
+</body>
+</html>
