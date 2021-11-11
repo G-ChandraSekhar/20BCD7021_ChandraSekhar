@@ -1,0 +1,32 @@
+body{
+    background-color:lightyellow;
+}
+a#G:hover{
+    color:red;
+    border: 2px solid brown;
+}
+a#G:visited{
+    color:black;
+}
+button{
+    background-color: black;
+    color: red;
+}
+p.Google{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: salmon;
+}
+
+p#lap{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    text-align: center;
+}
+a#marksID{
+    text-decoration: none;
+    padding: 5px;
+    font-size: small;
+}
+footer{
+    padding: 10px;
+}

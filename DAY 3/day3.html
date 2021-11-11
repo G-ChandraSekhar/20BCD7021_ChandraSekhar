@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day3CSS.css">
+    <link rel="shortcut icon" href="google_favicon.ico" type="image/x-icon">
+    <title>HTML Links to Lists</title>
+</head>
+<body>
+    <h1><p style="color:rebeccapurple">I am implementing Links concepts</p></h1>
+    <p>If you wish only to see my marks but not the entire web page then <a href="#marks" id="marksID"><mark>click here</mark></a></p>
+
+    <a href="https://www.google.com/" target="_blank" title="Google will be opened" id="G">Google</a>
+    <hr>
+    <p>You can click on this <a href="mailto:sekhar.20bcd7021@vitap.ac.in" style="color: black;">email address</a> and directly mail me</p>
+    <hr>
+    <p><h2>If you click this <button onclick="document.location='https://www.google.com/'">button</button> then you will be directed to Google website</h2></p>
+
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Below is Effiel Tower image</p>
+    <img src="../Effiel Tower.jpg" alt="Tower Image" width="500px" height="500px" style="border: 5px solid black;">
+    <br>
+    <p class="Google">Click on the below image and you will visit Google site</p>
+   
+
+    <a href="https://www.google.com/" target="_blank">
+        <img src="Google.jpg" alt="Google Image" width="100px" height="50px" style="float:inline-start;">
+    </a>
+    <hr>
+    <img src="Laptop.jpg" alt="Laptop" usemap="#Lappy">
+    <p id="lap">This is my laptop. I recommend you to buy laptop from the same site from which i bought. You can click on this laptop and it will take you that site</p>
+    <map name="Lappy">
+        <area shape="rect" coords="34,44,270,350" href="https://www.apple.com/" alt="Apple Website" target="_blank">
+    </map>
+
+    <hr>
+    <table id="marks">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Theory</th>
+            <th>Practical</th>
+            <th>Total Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>English</td>
+            <td>70</td>
+            <td>20</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>80</td>
+            <td>20</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th colspan="3">Result : Pass</th>
+    </tfoot>
+    </table>
+    <hr>
+    <footer>
+       <center><p style="font-weight: 900; font-size: large;">Carefully observe . One thing is there at the top called favicon &copy;</p></center> 
+    </footer>
+    </body>
+</html>
