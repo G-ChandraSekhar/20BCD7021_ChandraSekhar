@@ -31,8 +31,13 @@
     <img src="Laptop.jpg" alt="Laptop" usemap="#Lappy">
     <p id="lap">This is my laptop. I recommend you to buy laptop from the same site from which i bought. You can click on this laptop and it will take you that site</p>
     <map name="Lappy">
-        <area shape="rect" coords="34,44,270,350" href="https://www.apple.com/" alt="Apple Website" target="_blank">
+        <area shape="rect" coords="34,44,270,350" href="https://www.apple.com/" alt="Apple Website" target="_blank" onclick="laptop()">
     </map>
+     <script>
+        function laptop(){
+            alert("You have clicked the laptop")
+        }
+    </script>
 
     <hr>
     <table id="marks">
