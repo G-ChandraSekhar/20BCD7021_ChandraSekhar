@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day4CSS.css">
+    <title>HTML Block & Inline to Responsive</title>
+</head>
+<body>
+    <nav>
+        <a href="#AboutMe">About Me</a>
+    </nav>
+    <center> <button onclick="document.getElementById('date').innerHTML=Date()">Want to know date and time?</button>
+        <p id="date"></p></center>
+    <center><button onclick="change()">Change the content of website with id <q>Javascript</q></button></center>
+    
+    <script>
+        function change(){
+            document.getElementById("Javascript").innerHTML = "There are many inline elements";
+        }
+    </script>
+    <br>
+    <center><button onclick="redirect()">Hide all the contents with <q>block</q> class name</button></center>
+
+    <h2 style="font-family: 'Times New Roman', Times, serif">Hello, Welcome to Day 4</h2>
+    <div class="block">This is a block element and the border around it confirms the same</div>
+    <h3><div class="block">Class can be same for many elements</div></h3>
+
+    <div class="block main">Same class can be used for multiple element</div>
+    <p>This is a <span class="inline">span element</span> and the border confirms it</p>
+
+    <p id="Javascript">The text can be changed dynamically </p>
+    
+    <script>
+        function redirect(){
+            var x= document.getElementsByClassName("block");
+            for(var i=0;i<x.length;i++){
+                x[i].style.display="none";
+            }
+        }
+    </script>
+    <p>Below is a YouTube Video </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/46cXFUzR9XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="day3.html" frameborder="2" width="560" height="315" title="My Day 3 work, I have linked here"></iframe>
+
+    <hr>
+    <p id="block">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <script>
+        function myFunction() {
+            document.getElementById("block").style.fontSize = "25px"; 
+            document.getElementById("block").style.color = "red";
+            document.getElementById("main").style.backgroundColor = "yellow";        
+    }
+    </script>
+    <main id="AboutMe"> 
+        <section>
+            <center><h2>Website Developer</h2></center>
+            <img class="clip-path" src="Chandra Sekhar.jpg" alt="This is Chandra Sekhar Image" title="Chandra Sekhar's Image">
+             <h3>Chandra Sekhar</h3>
+             <a href="https://github.com/G-ChandraSekhar" target="_blank">GitHub</a><span> | </span>
+            <a href="https://twitter.com/10chandrasekhar" target="_blank">Twitter</a><span> | </span>
+             <a href="https://www.linkedin.com/in/chandra-sekhar-govindarajula-48a67a211/"target="_blank">LinkedIn</a>
+             <h4>A competent professional with deep understanding of Computer applications, processors and its languages. Privileged to possess infectious quest for learning with outstanding track record. Have got rich and varied experience on range of topics including Group Discussions, Seminars and various lectures. I am an enthusiastic and avid learner of technologies and its evolutions. I would like to up roles which demand higher application of physical and mental aptitude. I also would like to get myself part of those kind of projects which would be useful for the present fast paced world without disturbing the nature’s course of action.  </h4>
+
+         </section>
+</main>
+</body>
+</html>
