@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day5CSS.css">
+    <title>PAYMENT FORM</title>
+    <link rel="shortcut icon" href="Paytm_favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <center><h2 style="margin: auto;">Implementing Day 5 concepts</h2></center>
+    <div class="container">
+        <form action="">
+            <h1 class="Main_Heading">Payment Form</h1>
+            <hr>
+            <h2>User Info</h2>
+            <p style="color: red;">Required Fields are marked with *</p>
+            <p>Name* <input type="text" name="name" required value="Chandra Sekhar Govindarajula" readonly></p>
+            <p>Date Of Birth* <input type="date" name="dob" id="dob" required></p>
+            <fieldset>
+                <legend>Gender*</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male" required>
+                    Female <input type="radio" name="gender" id="female" required>
+                </p>
+            </fieldset>
+            <p>Address <textarea name="address" id="address" cols="10" rows="10" placeholder="Enter your address here"></textarea></p>
+            <p>Email Address* <input type="email" name="email" id="email"  required value="sekhar.20bcd7021@vitap.ac.in" readonly></p>
+            <p>Pincode* <input type="number" name="pincode" id="pincode" required placeholder="Enter your pincode here"></p>
+            <hr>
+            <h2>Payment Info</h2>
+            <p>Card type* 
+                <select name="cardtype" id="cardtype" required>
+                    <option value="">--Select a card type--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="RuPay">RuPay</option>
+                    <option value="Amex">American Express</option>
+                </select>
+            </p>
+            <p>Card Number* <input type="number" name="cardnumber" id="cardnumber" required placeholder="1111-2222-3333-4444"></p>
+            <p>Expiry Date* <input type="month" name="expiry date" id="expiry date">
+            <p>CVV* <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+            <p>GST Invoice <input type="file" name="invoice" id="invoice" multiple></p>
+            <input type="submit" value="PAY NOW">
+    
+        </form>
+    </div>
+    
+
+    
+</body>
+</html>
