@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header id="header" style="background-image: url(Header.jpg); background-size: cover; ">
+    <h2>Welcome to Chandra Sekhar's Website</h1>
+        </h2>
+    </header>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Skills">Skills</a>
+        <a href="#About Me">About Me</a>
+        <a href="contact.html">Contact Me</a>
+       <a onclick="dark()" class="dark"><img src="outline_dark_mode_white_24dp.png" alt="dark mode" title="Toggle Dark Mode"></a>
+    </nav>
+    <div style="background-image: url(Background.jpg);">
+        <main>
+            <section id="Home" style="text-align: center;background-color: #FAF3F3;">
+                <center><h2>Home</h2></center>
+                <p>This is my Portfolio website where it is our first quarter project. I truly encourage such initatives because it promotes team work, and a real test for our knowledge.
+                    <br>
+                    It is also an opportunity to learn, grow, and get our hands dirty on various range of topics in Web development.
+                    <br>
+                    Thank you Computer Society of India (CSI) for providing us with such challenges. 
+                </p>
+            </section>
+            <section id="Skills">
+                <center><h2>Skills</h2></center>
+                <ul>
+                    <li><p>I bring to the table an expertise of 
+                     <ul style="list-style-type:square;">
+                          <li>Microsoft Word</li>
+                          <li>Microsoft Power Point</li>
+                          <li>Canva</li>
+                          <li>Figma</li>
+                     </ul>
+                 </p>
+             </li>
+             <li>
+                 <p>Privileged to possess an in depth understanding of
+                 <ul style="list-style: square;">
+                     <li>C</li>
+                     <li>R</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>Java</li>
+                     <li>Matlab</li>
+                 </ul>
+             </p>
+         </li>
+         <li>I have been a team player and was instrumental in developing high performing teams</li>
+         <br>
+         <li>I have been a true change agent with my fast adaptability in terms of technology and its evolutions</li>
+         <br>
+         <li>Thanks to my cross functional exposure, I had developed problem solving and decision making abilities</li>
+     </ul>
+     </section>
+     </main>
+             
+             <section id="About Me"style="text-align:center;">
+                 <center><h2>About Me</h2></center>
+                 <img class="clip-path" src="Chandra Sekhar.jpg" alt="This is Chandra Sekhar Image" title="Chandra Sekhar's Image">
+                 <p>I am presently (as on Nov,2021) pursuing Bachelor’s degree in Computer Science and Engineering with specializations in Data Analytics from Vellore Institute of Technology (VIT). I am an enthusiastic and avid learner of technologies and its evolution showcasing an exemplary quest for learning and have keen bending to minute things. I would like to take up roles which demands higher application of physical and mental aptitudes.
+                     <br>
+                     <br>
+                     I am a kind of person who likes to give it back to the society because I believe if we do not share the knowledge with others then it’s a mere exercise in floccinaucinihilipilification because if we are good with the intent, the whole universe will conspire helping us achieve that.
+                     I am firm believer of <q>A man is literally what he thinks, his character being the complete sum of all his thought</q>as stated by James Allen in his book <q>As a man thinketh</q>. So, I would like to keep things simple, clutter less so that I can make myself comfortable in any sort of situation. And also, in my philosophy, if a person’s character is lost, everything is lost. So, I constantly work upon my character also would like to see others working on the same and agreeing on it without any inhibitions.
+                     <br>
+                     <br>
+                     Let me further take you deep into my thoughts. I enjoy simple pleasures of life because <q>The simple things are also the most extraordinary things, and only the wise can see them</q> as it is wonderfully quoted by Paulo Coelho in <q>The Alchemist</q>. I draw inspiration from many people from different walks of life because I believe it’s the fire within, passion within that drives us and I cannot afford to lose that. 
+                     <br>
+                      On a lighter note, you must have understood by this time that I am an Panglossian and I make no bones about it 😊. I had tried to be as eloquent as I can in expressing my thoughts, hope you were able to get the feel of my thoughts. 
+                     </p>   
+                 
+            </section>
+        
+        <footer id="foot">
+             <p style="text-align:center; color: white;">Designed by Chandra Sekhar Govindarajula<br /> Managed by CSI VIT AP <sup>&copy;</sup> </p>
+     
+             <a href="https://github.com/G-ChandraSekhar" class="fa fa-github" title="GitHub" target="_blank"></a>
+             <a href="https://twitter.com/10chandrasekhar" class="fa fa-twitter" title="Twitter" target="_blank"></a>
+             <a href="https://www.linkedin.com/in/chandra-sekhar-govindarajula-48a67a211/" class="fa fa-linkedin" title="LinkedIn" target="_blank"></a>
+             <a href="mailto:sekhar.20bcd7021@vitap.ac.in" class="fa fa-google" title="Gmail" target="_blank"></a>
+             <a href="https://instagram.com/chandrasekhar_10" class="fa fa-instagram" title="Instagram" target="_blank"></a>
+     
+             <a href="#">2021 | VIT </a>
+            
+        </footer>
+         <button onclick="topFunction()" id="Top" title="Go to top"><img src="outline_arrow_upward_white_24dp.png" alt="Return to Top" ></button>
+         <script>
+             var mybutton = document.getElementById("Top");
+         
+             window.onscroll = function() {
+                 scrollFunction()
+             };
+             function scrollFunction() {
+                 if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+                     mybutton.style.display = "block";
+                 } 
+                 else {
+                     mybutton.style.display = "none";
+                }
+             }
+             function topFunction() {
+                 document.body.scrollTop = 0;
+                 document.documentElement.scrollTop = 0;
+             }
+         </script>
+             
+         <script>
+             function dark(){
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");
+             }
+         </script>
+         </div>
+</body>
+</html>
